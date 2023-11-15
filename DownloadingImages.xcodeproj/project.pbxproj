@@ -11,7 +11,7 @@
 		E4274B992B02699700E557D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4274B982B02699700E557D9 /* ContentView.swift */; };
 		E4274B9B2B02699800E557D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4274B9A2B02699800E557D9 /* Assets.xcassets */; };
 		E4274B9E2B02699800E557D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4274B9D2B02699800E557D9 /* Preview Assets.xcassets */; };
-		E47227852B02E9FF00066A5B /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47227842B02E9FF00066A5B /* URLSession.swift */; };
+		E472278B2B0516A000066A5B /* GetImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472278A2B0516A000066A5B /* GetImages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		E4274B982B02699700E557D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4274B9A2B02699800E557D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4274B9D2B02699800E557D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E47227842B02E9FF00066A5B /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		E472278A2B0516A000066A5B /* GetImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +53,14 @@
 		E4274B952B02699700E557D9 /* DownloadingImages */ = {
 			isa = PBXGroup;
 			children = (
+				E47227892B05164D00066A5B /* Utilities */,
+				E47227882B05164000066A5B /* ViewModels */,
+				E47227872B05163B00066A5B /* Views */,
+				E47227862B05163500066A5B /* Models */,
 				E4274B962B02699700E557D9 /* DownloadingImagesApp.swift */,
 				E4274B982B02699700E557D9 /* ContentView.swift */,
 				E4274B9A2B02699800E557D9 /* Assets.xcassets */,
 				E4274B9C2B02699800E557D9 /* Preview Content */,
-				E47227842B02E9FF00066A5B /* URLSession.swift */,
 			);
 			path = DownloadingImages;
 			sourceTree = "<group>";
@@ -68,6 +71,35 @@
 				E4274B9D2B02699800E557D9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E47227862B05163500066A5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E47227872B05163B00066A5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E472278A2B0516A000066A5B /* GetImages.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E47227882B05164000066A5B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E47227892B05164D00066A5B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4274B992B02699700E557D9 /* ContentView.swift in Sources */,
+				E472278B2B0516A000066A5B /* GetImages.swift in Sources */,
 				E4274B972B02699700E557D9 /* DownloadingImagesApp.swift in Sources */,
-				E47227852B02E9FF00066A5B /* URLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -258,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
