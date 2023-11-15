@@ -9,10 +9,23 @@
 
 import SwiftUI
 
+// Codable
+// Background Threads
+// weak self
+// Combine
+// Publisher and Subscribers
+// FileManager
+// NSCashe
+
 struct GetImages: View {
     var body: some View {
         
-        Text("Hello")
+        NavigationView {
+            List {
+                Text("Pizdec")
+            }
+            .navigationTitle("Get Images")
+        }
     }
 }
 

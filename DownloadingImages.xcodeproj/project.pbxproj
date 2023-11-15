@@ -12,6 +12,7 @@
 		E4274B9B2B02699800E557D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4274B9A2B02699800E557D9 /* Assets.xcassets */; };
 		E4274B9E2B02699800E557D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4274B9D2B02699800E557D9 /* Preview Assets.xcassets */; };
 		E472278B2B0516A000066A5B /* GetImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472278A2B0516A000066A5B /* GetImages.swift */; };
+		E472278D2B051CEC00066A5B /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472278C2B051CEC00066A5B /* PhotoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E4274B9A2B02699800E557D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4274B9D2B02699800E557D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E472278A2B0516A000066A5B /* GetImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImages.swift; sourceTree = "<group>"; };
+		E472278C2B051CEC00066A5B /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		E47227862B05163500066A5B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E472278C2B051CEC00066A5B /* PhotoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			files = (
 				E4274B992B02699700E557D9 /* ContentView.swift in Sources */,
 				E472278B2B0516A000066A5B /* GetImages.swift in Sources */,
+				E472278D2B051CEC00066A5B /* PhotoModel.swift in Sources */,
 				E4274B972B02699700E557D9 /* DownloadingImagesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
