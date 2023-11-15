@@ -12,5 +12,7 @@ import Foundation
 class GetImagesViewModel: ObservableObject {
     
     @Published var dataArray: [PhotoModel] = []
+    let newInstance = PhtotModelDataService()
     
+    let dataService = PhtotModelDataService.instance
 }
