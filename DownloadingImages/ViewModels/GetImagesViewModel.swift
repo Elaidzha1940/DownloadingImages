@@ -18,12 +18,12 @@ class GetImagesViewModel: ObservableObject {
     let dataService = PhtotModelDataService.instance
     
     init() {
-        
+        addSubscribers()
     }
     
     func addSubscribers() {
         dataService.$photoModels
-            .sink { [weak sels] (returnedPhotoModels) in
+            .sink { [weak self] (returnedPhotoModels) in
                 self?.dataArray = returnedPhotoModels
             }
             .store(in: &cancellables)

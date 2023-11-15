@@ -15,6 +15,7 @@
 		E472278D2B051CEC00066A5B /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472278C2B051CEC00066A5B /* PhotoModel.swift */; };
 		E472278F2B051E2000066A5B /* GetImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472278E2B051E2000066A5B /* GetImagesViewModel.swift */; };
 		E47227912B0520D600066A5B /* PhtotModelDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47227902B0520D600066A5B /* PhtotModelDataService.swift */; };
+		E47227932B0534F400066A5B /* GetImagesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47227922B0534F400066A5B /* GetImagesRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E472278C2B051CEC00066A5B /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		E472278E2B051E2000066A5B /* GetImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImagesViewModel.swift; sourceTree = "<group>"; };
 		E47227902B0520D600066A5B /* PhtotModelDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhtotModelDataService.swift; sourceTree = "<group>"; };
+		E47227922B0534F400066A5B /* GetImagesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImagesRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				E472278A2B0516A000066A5B /* GetImages.swift */,
+				E47227922B0534F400066A5B /* GetImagesRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				E472278B2B0516A000066A5B /* GetImages.swift in Sources */,
 				E47227912B0520D600066A5B /* PhtotModelDataService.swift in Sources */,
 				E472278D2B051CEC00066A5B /* PhotoModel.swift in Sources */,
+				E47227932B0534F400066A5B /* GetImagesRow.swift in Sources */,
 				E4274B972B02699700E557D9 /* DownloadingImagesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
