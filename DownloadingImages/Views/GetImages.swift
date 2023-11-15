@@ -18,11 +18,16 @@ import SwiftUI
 // NSCashe
 
 struct GetImages: View {
+    @StateObject var vm = GetImagesViewModel()
+    
+    
     var body: some View {
         
         NavigationView {
             List {
-                Text("Pizdec")
+                ForEach(vm.dataArray) { model in
+                    Text(model.title)
+                }
             }
             .navigationTitle("Get Images")
         }

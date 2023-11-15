@@ -1,9 +1,11 @@
+//  /*
 //
-//  PhotoModel.swift
-//  DownloadingImages
+//  Project: DownloadingImages
+//  File: PhotoModel.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 15.11.2023
 //
-//  Created by Elaidzha Shchukin on 15.11.2023.
-//
+//  */
 
 import Foundation
 
