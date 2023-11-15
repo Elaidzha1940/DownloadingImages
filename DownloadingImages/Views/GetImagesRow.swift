@@ -32,5 +32,5 @@ struct GetImagesRow: View {
 
 #Preview {
     GetImagesRow(model: PhotoModel(albumId: 1, id: 1, title: "title", url: "url", thumbnailUrl: "thumbnailUrl"))
-        .previewLayout(.sizeThatFits)
+        .padding()
 }
