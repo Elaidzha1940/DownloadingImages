@@ -8,15 +8,17 @@
 //  */
 
 import Foundation
+import Combine
 
 class PhtotModelDataService {
     
     static let instance = PhtotModelDataService() // Singleton
     
     @Published var photoModels: [PhotoModel] = []
-     
+    var cancellables = Set<AnyCancellable>()
+    
     private init() {
-        
+        downloadData()
     }
     
     func downloadData() {
@@ -39,9 +41,9 @@ class PhtotModelDataService {
             } receiveValue: { [weak self] (returnedPhotoModels) in
                 self?.photoModels = returnedPhotoModels
             }
-
-        
+            .store(in: &cancellables)
     }
+    
     private func handleOutput(output: URLSession.DataTaskPublisher.Output) throws -> Data {
         guard let response = output.response as? HTTPURLResponse,
               response.statusCode >= 200 && response.statusCode < 300 else {
