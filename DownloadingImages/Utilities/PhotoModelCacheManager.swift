@@ -20,7 +20,7 @@ class PhotoModelCacheManager {
         cache.countLimit = 200
         cache.totalCostLimit = 1025 * 1025 * 200 // 200mb
         return cache
-    }() 
+    }()
     
     func add(key: String, value: UIImage) {
         photoCache.setObject(value, forKey: key as NSString)

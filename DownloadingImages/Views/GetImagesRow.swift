@@ -15,7 +15,7 @@ struct GetImagesRow: View {
     
     var body: some View {
         HStack {
-            GetImageView(url: model.url)
+            GetImageView(url: model.url, key: "\(model.id)")
             .foregroundColor(.green)
                 .frame(width: 75, height: 75)
             VStack(alignment: .leading) {

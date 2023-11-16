@@ -17,12 +17,19 @@ class ImageLoadingViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     
     var cancellables = Set<AnyCancellable>()
+    let manager = PhotoModelCacheManager.instance
     
     let urlString: String
+    let imageKey: String
     
-    init(url: String) {
+    init(url: String, key: String) {
         urlString = url
+        imageKey = key 
         downloadImage()
+    }
+    
+    func getImage() {
+        //manager.get(key: <#T##String#>)
     }
     
     func downloadImage() {
