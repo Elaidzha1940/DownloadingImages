@@ -10,15 +10,18 @@
 import SwiftUI
 
 struct GetImageView: View {
-    @State var isLoading: Bool = true
+    //@State var isLoading: Bool = true
+    @StateObject var loader = ImageLoadingViewModel()
     
     var body: some View {
         
         ZStack {
-            if isLoading {
+            if loader.isLoading {
                 ProgressView()
-            } else {
-               Circle()
+            } else if let image = loader.image {
+               Image(uiImage: image)
+                    .resizable()
+                    .clipShape(Circle())
             }
         }
     }
