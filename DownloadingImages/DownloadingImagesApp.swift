@@ -1,9 +1,11 @@
+//  /*
 //
-//  DownloadingImagesApp.swift
-//  DownloadingImages
+//  Project: DownloadingImages
+//  File: DownloadingImagesApp.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 13.11.2023
 //
-//  Created by Elaidzha Shchukin on 13.11.2023.
-//
+//  */
 
 import SwiftUI
 
