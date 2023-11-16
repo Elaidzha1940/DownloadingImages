@@ -19,6 +19,7 @@
 		E47227952B05360A00066A5B /* GetImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47227942B05360A00066A5B /* GetImageView.swift */; };
 		E47227972B05968A00066A5B /* ImageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47227962B05968A00066A5B /* ImageLoadingViewModel.swift */; };
 		E47227992B05A1E700066A5B /* PhotoModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47227982B05A1E700066A5B /* PhotoModelCacheManager.swift */; };
+		E472279B2B05AD8000066A5B /* PhotoModelFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472279A2B05AD8000066A5B /* PhotoModelFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		E47227942B05360A00066A5B /* GetImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageView.swift; sourceTree = "<group>"; };
 		E47227962B05968A00066A5B /* ImageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingViewModel.swift; sourceTree = "<group>"; };
 		E47227982B05A1E700066A5B /* PhotoModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelCacheManager.swift; sourceTree = "<group>"; };
+		E472279A2B05AD8000066A5B /* PhotoModelFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				E47227902B0520D600066A5B /* PhtotModelDataService.swift */,
 				E47227982B05A1E700066A5B /* PhotoModelCacheManager.swift */,
+				E472279A2B05AD8000066A5B /* PhotoModelFileManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E47227972B05968A00066A5B /* ImageLoadingViewModel.swift in Sources */,
+				E472279B2B05AD8000066A5B /* PhotoModelFileManager.swift in Sources */,
 				E4274B992B02699700E557D9 /* ContentView.swift in Sources */,
 				E472278F2B051E2000066A5B /* GetImagesViewModel.swift in Sources */,
 				E472278B2B0516A000066A5B /* GetImages.swift in Sources */,

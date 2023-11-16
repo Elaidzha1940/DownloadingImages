@@ -26,5 +26,7 @@ class PhotoModelCacheManager {
         photoCache.setObject(value, forKey: key as NSString)
     }
     
-    
+    func get(key: String) -> UIImage? {
+        return photoCache.object(forKey: key as NSString)
+    }
 }
