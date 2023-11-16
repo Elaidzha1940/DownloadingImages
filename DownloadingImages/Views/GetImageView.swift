@@ -15,11 +15,16 @@ struct GetImageView: View {
     var body: some View {
         
         ZStack {
-            if isLoading 
+            if isLoading {
+                ProgressView()
+            } else {
+               Circle()
+            }
         }
     }
 }
 
 #Preview {
     GetImageView()
+        .frame(width: 75, height:  75)
 }

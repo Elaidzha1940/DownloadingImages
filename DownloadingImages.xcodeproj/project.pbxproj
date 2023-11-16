@@ -17,6 +17,7 @@
 		E47227912B0520D600066A5B /* PhtotModelDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47227902B0520D600066A5B /* PhtotModelDataService.swift */; };
 		E47227932B0534F400066A5B /* GetImagesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47227922B0534F400066A5B /* GetImagesRow.swift */; };
 		E47227952B05360A00066A5B /* GetImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47227942B05360A00066A5B /* GetImageView.swift */; };
+		E47227972B05968A00066A5B /* ImageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47227962B05968A00066A5B /* ImageLoadingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		E47227902B0520D600066A5B /* PhtotModelDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhtotModelDataService.swift; sourceTree = "<group>"; };
 		E47227922B0534F400066A5B /* GetImagesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImagesRow.swift; sourceTree = "<group>"; };
 		E47227942B05360A00066A5B /* GetImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageView.swift; sourceTree = "<group>"; };
+		E47227962B05968A00066A5B /* ImageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				E472278E2B051E2000066A5B /* GetImagesViewModel.swift */,
+				E47227962B05968A00066A5B /* ImageLoadingViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E47227972B05968A00066A5B /* ImageLoadingViewModel.swift in Sources */,
 				E4274B992B02699700E557D9 /* ContentView.swift in Sources */,
 				E472278F2B051E2000066A5B /* GetImagesViewModel.swift in Sources */,
 				E472278B2B0516A000066A5B /* GetImages.swift in Sources */,
