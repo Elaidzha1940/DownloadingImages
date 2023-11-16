@@ -9,11 +9,14 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 class ImageLoadingViewModel: ObservableObject {
     
     @Published var image: UIImage? = nil
     @Published var isLoading: Bool = false
+    
+    var cancellables = Set<AnyCancellable>()
     
     let urlString: String
     
@@ -38,6 +41,7 @@ class ImageLoadingViewModel: ObservableObject {
             } receiveValue: { [weak self] (returnedImage) in
                 self?.image = returnedImage
             }
-
+            .store(in: &cancellables)
+        
     }
 }

@@ -28,7 +28,7 @@ struct GetImages: View {
                 ForEach(vm.dataArray) { model in
                     HStack {
                         Circle()
-                            .foregroundColor(.green)
+                            .foregroundColor(.brown)
                             .frame(width: 75, height: 75)
                         VStack(alignment: .leading) {
                             Text(model.title)

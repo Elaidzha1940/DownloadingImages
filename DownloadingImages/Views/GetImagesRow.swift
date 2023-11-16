@@ -15,8 +15,8 @@ struct GetImagesRow: View {
     
     var body: some View {
         HStack {
-            Circle()
-                .foregroundColor(.green)
+            GetImageView(url: model.url)
+            .foregroundColor(.green)
                 .frame(width: 75, height: 75)
             VStack(alignment: .leading) {
                 Text(model.title)
@@ -31,6 +31,6 @@ struct GetImagesRow: View {
 }
 
 #Preview {
-    GetImagesRow(model: PhotoModel(albumId: 1, id: 1, title: "title", url: "url", thumbnailUrl: "thumbnailUrl"))
+    GetImagesRow(model: PhotoModel(albumId: 1, id: 1, title: "title", url: "https://via.placeholder.com/600/92c952", thumbnailUrl: "https://via.placeholder.com/600/92c952"))
         .padding()
 }
