@@ -26,19 +26,7 @@ struct GetImages: View {
         NavigationView {
             List {
                 ForEach(vm.dataArray) { model in
-                    HStack {
-                        Circle()
-                            .foregroundColor(.brown)
-                            .frame(width: 75, height: 75)
-                        VStack(alignment: .leading) {
-                            Text(model.title)
-                                .font(.headline)
-                            Text(model.url)
-                                .foregroundStyle(.mint)
-                                .italic()
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    }
+                    GetImagesRow(model: model)
                 }
             }
             .navigationTitle("Get Images")

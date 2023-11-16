@@ -26,7 +26,7 @@ class ImageLoadingViewModel: ObservableObject {
     }
     
     func downloadImage() {
-        
+        print("Getting image now. ")
         isLoading = true
         guard let url = URL(string: urlString) else {
             isLoading = false
