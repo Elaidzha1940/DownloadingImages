@@ -15,14 +15,17 @@ class ImageLoadingViewModel: ObservableObject {
     @Published var image: UIImage? = nil
     @Published var isLoading: Bool = false
     
-    init() {
+    let urlString: String
+    
+    init(url: String) {
+        urlString = url
         downloadImage()
     }
     
     func downloadImage() {
         
         isLoading = true
-        guard let url = URL(string: "") else {
+        guard let url = URL(string: urlString) else {
             isLoading = false
             return
         }

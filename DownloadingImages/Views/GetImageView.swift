@@ -10,8 +10,11 @@
 import SwiftUI
 
 struct GetImageView: View {
-    //@State var isLoading: Bool = true
-    @StateObject var loader = ImageLoadingViewModel()
+    @StateObject var loader: ImageLoadingViewModel
+    
+    init(url: String) {
+        _loader = StateObject(wrappedValue: ImageLoadingViewModel(url: url))
+    }
     
     var body: some View {
         
@@ -28,6 +31,6 @@ struct GetImageView: View {
 }
 
 #Preview {
-    GetImageView()
+    GetImageView(url: "https://via.placeholder.com/600/92c952" )
         .frame(width: 75, height:  75)
 }
